@@ -36,7 +36,7 @@ class Keranjang:
         return total
   
     def cetak_struk(self):
-        print("\n=== struk belanja ===")
+        print("\n struk belanja ")
         for item in self.daftar_barang:
             p = item["produk"]
             j = item["jumlah"]
