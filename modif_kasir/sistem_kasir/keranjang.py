@@ -2,7 +2,7 @@ class Keranjang:
     def __init__(self, member=False):
         self.daftar_barang = []
         self.member = member
-  
+
     def tambah_produk(self, produk_baru, jumlah):
         if jumlah <= 0:
             print("jumlah ga valid")
@@ -28,7 +28,7 @@ class Keranjang:
                 print(f"{nama_produk} dihapus")
                 return
         print("barang ga ketemu")
-    
+        
     def hitung_total(self):
         total = 0
         for item in self.daftar_barang:
