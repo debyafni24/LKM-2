@@ -16,6 +16,6 @@ class Produk:
     @kode_produk.setter
     def kode_produk(self, value):
         if value is None:
-            self._kode_produk = f"DBY{random.randint(100,999)}"
+            self._kode_produk = f"DEBY{random.randint(100,999)}" #ini untuk buat kode random bu
         else:
             self._kode_produk = value
