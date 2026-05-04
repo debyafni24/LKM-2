@@ -5,17 +5,3 @@ class Produk:
         self.nama = nama
         self.harga = harga
         self.stok = stok
-        self._kode_produk = None #ini ya ibu tambahannya, untuk nyiapin tempat data asli (atribut private)
-        
-        self.kode_produk = None #yang ini untuk manggil setter
-
-    @property
-    def kode_produk(self):
-        return self._kode_produk
-
-    @kode_produk.setter
-    def kode_produk(self, value):
-        if value is None:
-            self._kode_produk = f"DEBY{random.randint(100,999)}" #ini untuk buat kode random bu
-        else:
-            self._kode_produk = value
